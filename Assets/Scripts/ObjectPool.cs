@@ -24,7 +24,8 @@ public class ObjectPool : MonoBehaviour
         {
 
             EnableObject();
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(3f);
+            Debug.Log("isruun0");
         }
     }
     void EnableObject()
@@ -49,6 +50,8 @@ public class ObjectPool : MonoBehaviour
             pool[i] = Instantiate(Enemy, transform);
             pool[i].SetActive(false);
         }
+
+        
 
     }
 }

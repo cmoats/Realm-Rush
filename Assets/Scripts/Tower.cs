@@ -15,7 +15,7 @@ public class Tower : MonoBehaviour
             return false;
         }
         
-        if (bank.currentBalance >= cost)
+        if (bank.currentBalance >= cost )
         {
             Instantiate(tower, position, Quaternion.identity);
             bank.Withdraw(cost);
